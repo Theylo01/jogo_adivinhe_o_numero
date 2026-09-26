@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+    <meta name="description" content="Jogo de adivinhação de números com diferentes níveis de dificuldade.">
+    <link rel="icon" href="assets/roleta.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <main class="jogo">
+        <img src="assets/roleta.gif" alt="Roleta da sorte" id="roleta">
+        <section class="para_jogar" id="para_jogar">
+            <h1>Bem-vindo ao jogo de adivinhação!!</h1>
+            <h2>Escolha a dificuldade:</h2>
+
+            <div class="dificuldade">
+                <button onclick="btn1()">Fácil</button>
+                <button onclick="btn2e3(10)">Médio</button>
+                <button onclick="btn2e3(3)">Difícil</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</body>
+</html>

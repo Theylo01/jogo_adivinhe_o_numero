@@ -1,0 +1,91 @@
+@keyframes background_animation{
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 0;}
+}
+
+body{
+    font-family: sans-serif;
+    user-select: none;
+    margin: 0;
+    min-height: 100vh;
+    
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    background-image: url('https://images.vexels.com/media/users/3/194465/isolated/preview/fda2bebd177c3218208ef8f0cef70a70-icone-de-traco-de-aviao-de-papel.png');
+    animation: background_animation 10s linear infinite;
+}
+
+.jogo{
+    width: 85%;
+    max-width: 800px;
+
+    height: 664px;
+    max-height: 80vh;
+
+    background-color: white;
+    border-radius: 5%;
+    border: 5px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#roleta{
+    width: 50%;
+    max-width: 100%;
+}
+
+.dificuldade button{
+    margin: 0;
+    padding: 0;
+    width: 28%;
+    height: 45px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+.dificuldade button:hover{
+    width: 32%;
+    height: 70px;
+    font-size: 30px;
+}
+
+.elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.elementos h1,h2 {
+    margin: 10px 0;
+}
+
+.elementos label {
+    font-size: 24px;
+}
+
+.elementos input{
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.elementos button{
+    width: 28%;
+    max-width: 120px;
+    height: 32px;
+    font-size: large;
+    transition: transform 0.1s;
+}
+
+.elementos button:hover{
+    transform: scale(1.3);
+}
